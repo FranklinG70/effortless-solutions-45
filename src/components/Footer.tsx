@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="space-y-2">
               <p>1 833 293 3411</p>
               <p>info@goeffortlesssolutions.com</p>
-              <p>Delaware, U.S.</p>
+              <p>1207 Delaware Ave Unit 345 Wilmington DE 19806</p>
             </div>
           </div>
         </div>

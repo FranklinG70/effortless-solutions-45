@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
@@ -57,7 +58,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Location</h3>
-                    <p className="text-gray-400">Based in Delaware U.S., working with clients globally</p>
+                    <p className="text-gray-400">1207 Delaware Ave Unit 345 Wilmington DE 19806</p>
                   </div>
                 </div>
               </CardContent>
