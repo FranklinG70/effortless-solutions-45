@@ -58,7 +58,7 @@ const About = () => {
                         <div className="text-sm text-gray-600">Uptime Guarantee</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-gray-900">< 2s</div>
+                        <div className="text-2xl font-bold text-gray-900">&lt;2s</div>
                         <div className="text-sm text-gray-600">Response Time</div>
                       </div>
                     </div>
