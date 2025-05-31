@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Bot, Zap, Settings } from 'lucide-react';
+import { Phone, Bot, Zap, Settings, Globe } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -15,6 +15,12 @@ const Services = () => {
       title: "AI-Powered Lead Generation",
       description: "We design AI-driven funnels that capture, qualify, and convert leads on autopilot. From chatbots to call-based lead systems, our solutions work around the clock to grow your pipeline.",
       features: ["Automated Funnels", "Lead Qualification", "Multi-Channel Capture", "CRM Integration"]
+    },
+    {
+      icon: Globe,
+      title: "Website Development",
+      description: "Modern, responsive websites that convert visitors into customers. We build fast, SEO-optimized sites with integrated AI features, booking systems, and conversion-focused designs that grow your business.",
+      features: ["Responsive Design", "SEO Optimization", "AI Integration", "Conversion Focus"]
     },
     {
       icon: Settings,
@@ -34,7 +40,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-8">
