@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-gray-50 to-blue-50 py-20">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center justify-center text-center max-w-6xl mx-auto">
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -15,12 +15,12 @@ const Hero = () => {
                   That Work While You Sleep
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
                 Elevate your customer experience and supercharge your sales funnel with intelligent voice AI and automated lead-gen solutions tailored for growth.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-4" asChild>
                 <a href="https://link.goeffortlesssolutions.com/widget/booking/Cy4Pl7tq1QOAWlkzpDHt" target="_blank" rel="noopener noreferrer">
                   Schedule Free Consultation
@@ -33,7 +33,7 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="flex items-center space-x-8 pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 pt-4">
               <div className="flex items-center space-x-2">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <Bot className="h-6 w-6 text-blue-600" />
