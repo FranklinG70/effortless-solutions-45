@@ -83,10 +83,6 @@ const Contact = () => {
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
-                    ROI projection for your business
-                  </li>
-                  <li className="flex items-center">
-                    <div className="w-2 h-2 bg-white rounded-full mr-3"></div>
                     Implementation timeline
                   </li>
                   <li className="flex items-center">
