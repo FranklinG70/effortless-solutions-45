@@ -52,37 +52,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
-          <div className="relative">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 space-y-6">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-gray-600">AI Assistant Active</span>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <div className="text-sm text-blue-600 font-medium">Incoming Call</div>
-                  <div className="text-gray-900">Hello! Thank you for calling. How can I help you today?</div>
-                </div>
-                
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <div className="text-sm text-gray-600 font-medium">Customer</div>
-                  <div className="text-gray-900">I'd like to schedule an appointment.</div>
-                </div>
-                
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <div className="text-sm text-blue-600 font-medium">AI Assistant</div>
-                  <div className="text-gray-900">Perfect! I have several time slots available. What works best for you?</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-between pt-4 border-t">
-                <span className="text-sm text-gray-600">Call Duration: 2:34</span>
-                <span className="text-sm text-green-600 font-medium">Lead Qualified ✓</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

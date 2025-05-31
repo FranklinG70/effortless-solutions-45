@@ -1,5 +1,4 @@
 
-import { Card, CardContent } from '@/components/ui/card';
 import { Target, Users, Zap } from 'lucide-react';
 
 const About = () => {
@@ -40,49 +39,6 @@ const About = () => {
                 <p className="text-sm text-gray-600">Cutting-edge solutions</p>
               </div>
             </div>
-          </div>
-          
-          <div className="relative">
-            <Card className="border-0 shadow-2xl">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">24/7</div>
-                    <div className="text-gray-600">AI Coverage</div>
-                  </div>
-                  
-                  <div className="border-t pt-6">
-                    <div className="grid grid-cols-2 gap-6 text-center">
-                      <div>
-                        <div className="text-2xl font-bold text-gray-900">100%</div>
-                        <div className="text-sm text-gray-600">Uptime Guarantee</div>
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-gray-900">&lt;2s</div>
-                        <div className="text-sm text-gray-600">Response Time</div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="border-t pt-6">
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-600">Lead Qualification</span>
-                        <span className="font-semibold text-green-600">95%</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-600">Customer Satisfaction</span>
-                        <span className="font-semibold text-green-600">98%</span>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <span className="text-gray-600">Cost Reduction</span>
-                        <span className="font-semibold text-green-600">60%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
