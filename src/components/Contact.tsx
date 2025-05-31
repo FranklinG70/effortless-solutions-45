@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Calendar } from 'lucide-react';
@@ -97,9 +96,11 @@ const Contact = () => {
                 </ul>
               </div>
               
-              <Button size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100 text-lg py-4">
-                Schedule Free Consultation
-                <Calendar className="ml-2 h-5 w-5" />
+              <Button size="lg" className="w-full bg-white text-blue-600 hover:bg-gray-100 text-lg py-4" asChild>
+                <a href="https://link.goeffortlesssolutions.com/widget/booking/Cy4Pl7tq1QOAWlkzpDHt" target="_blank" rel="noopener noreferrer">
+                  Schedule Free Consultation
+                  <Calendar className="ml-2 h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
