@@ -27,9 +27,11 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now: 1 833 293 3411
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-2" asChild>
+                <a href="tel:18332933411">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now: 1 833 293 3411
+                </a>
               </Button>
             </div>
             
