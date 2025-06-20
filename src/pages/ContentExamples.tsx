@@ -109,10 +109,6 @@ const ContentExamples = () => {
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Frank's Plumbing Services Video Ad</CardTitle>
-                <p className="text-gray-600">
-                  This video advertisement showcases professional plumbing services with a focus on reliability, 
-                  expertise, and customer satisfaction.
-                </p>
               </CardHeader>
               <CardContent>
                 <div className="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
@@ -124,16 +120,6 @@ const ContentExamples = () => {
                     <source src="/Franks Plumbing Ad (720).mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold">Video Content Strategy:</h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Showcases professional team and equipment</li>
-                    <li>• Highlights before/after transformations</li>
-                    <li>• Features customer testimonials</li>
-                    <li>• Emphasizes 24/7 emergency service availability</li>
-                    <li>• Clear call-to-action with contact information</li>
-                  </ul>
                 </div>
               </CardContent>
             </Card>
