@@ -1,6 +1,7 @@
 
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -18,6 +19,9 @@ const Header = () => {
             <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
             <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
             <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            <Link to="/content-examples" className="text-gray-600 hover:text-blue-600 transition-colors">
+              Content Examples
+            </Link>
             <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" asChild>
               <a href="https://link.goeffortlesssolutions.com/widget/booking/Cy4Pl7tq1QOAWlkzpDHt" target="_blank" rel="noopener noreferrer">
                 Free Consultation
