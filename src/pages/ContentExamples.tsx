@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
@@ -104,19 +103,22 @@ const ContentExamples = () => {
           <div className="max-w-4xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl">Professional Plumbing Services Video Ad</CardTitle>
+                <CardTitle className="text-2xl">Frank's Plumbing Services Video Ad</CardTitle>
                 <p className="text-gray-600">
                   This video advertisement showcases professional plumbing services with a focus on reliability, 
                   expertise, and customer satisfaction.
                 </p>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-gray-900 rounded-lg mb-6 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="text-6xl mb-4">🎬</div>
-                    <p className="text-xl mb-2">Plumbing Services Video Ad</p>
-                    <p className="text-gray-300">Video content from: github.com/FranklinG70/plumbingad.git</p>
-                  </div>
+                <div className="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
+                  <video 
+                    controls 
+                    className="w-full h-full"
+                    poster="/placeholder.svg"
+                  >
+                    <source src="/Franks Plumbing Ad (720).mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold">Video Content Strategy:</h3>
