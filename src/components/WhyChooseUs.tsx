@@ -1,27 +1,37 @@
 
-import { CheckCircle, Volume2, Settings, Clock, TrendingUp } from 'lucide-react';
+import { Volume2, Settings, Clock, TrendingUp, Users, Zap } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
     {
       icon: Volume2,
       title: "Natural-Sounding Voice Tech",
-      description: "Our AI receptionists don't sound robotic."
+      description: "Our AI receptionists sound completely human and natural."
+    },
+    {
+      icon: Users,
+      title: "Social Media Expertise",
+      description: "Strategic content that builds communities and drives engagement."
     },
     {
       icon: Settings,
       title: "Fully Customizable Solutions",
-      description: "Designed around your business needs."
+      description: "Tailored AI and social strategies for your unique business needs."
     },
     {
       icon: Clock,
       title: "Save Time, Gain Efficiency",
-      description: "Let AI handle the repetitive work."
+      description: "Automated systems handle calls and social media 24/7."
     },
     {
       icon: TrendingUp,
-      title: "Results-Driven Lead Gen",
-      description: "Focused on conversion, not just collection."
+      title: "Results-Driven Approach",
+      description: "Focused on measurable growth and ROI across all channels."
+    },
+    {
+      icon: Zap,
+      title: "Brand Loyalty Building",
+      description: "Create lasting relationships through consistent engagement."
     }
   ];
 
@@ -31,11 +41,11 @@ const WhyChooseUs = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We deliver AI solutions that actually work for your business
+            We deliver AI solutions and social media strategies that actually work for your business
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center group">
               <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-all duration-300">

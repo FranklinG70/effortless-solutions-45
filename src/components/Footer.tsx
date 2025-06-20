@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-white">Effortless Solutions</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              AI marketing agency dedicated to helping businesses automate and scale customer interactions.
+              AI-powered voice receptionists and strategic social media management to grow your business and build lasting customer relationships.
             </p>
           </div>
           
@@ -20,6 +20,7 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-4">Services</h3>
             <ul className="space-y-2">
               <li><a href="#" className="hover:text-blue-400 transition-colors">Voice AI Receptionists</a></li>
+              <li><a href="#" className="hover:text-blue-400 transition-colors">Social Media Management</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Lead Generation</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Custom AI Solutions</a></li>
             </ul>

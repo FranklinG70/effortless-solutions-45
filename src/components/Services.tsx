@@ -1,6 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Bot, Zap, Settings, Globe } from 'lucide-react';
+import { Phone, Bot, Zap, Settings, Globe, Users } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -9,6 +9,12 @@ const Services = () => {
       title: "Voice AI Receptionists",
       description: "Always on, never miss a call. Our custom-built voice assistants handle inbound calls, schedule appointments, qualify leads, and answer FAQs with natural, human-like responses—24/7.",
       features: ["24/7 Availability", "Natural Conversations", "Appointment Scheduling", "Lead Qualification"]
+    },
+    {
+      icon: Users,
+      title: "Social Media Management",
+      description: "Comprehensive social media strategy and management that increases brand awareness, generates leads, improves customer service, and builds lasting brand loyalty across all platforms.",
+      features: ["Content Creation", "Community Management", "Lead Generation", "Brand Monitoring"]
     },
     {
       icon: Bot,
@@ -36,11 +42,11 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive AI solutions designed to transform your customer interactions and accelerate business growth
+            Comprehensive AI solutions and social media management designed to transform your customer interactions and accelerate business growth
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-8">
