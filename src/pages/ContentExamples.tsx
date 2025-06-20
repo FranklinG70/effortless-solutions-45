@@ -4,8 +4,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const ContentExamples = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const socialMediaPosts = [
     {
       type: "Fun Fact & History",

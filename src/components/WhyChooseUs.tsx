@@ -1,58 +1,48 @@
 
-import { Volume2, Settings, Clock, TrendingUp, Users, Zap } from 'lucide-react';
+import { Clock, Target, Users, TrendingUp } from 'lucide-react';
 
 const WhyChooseUs = () => {
   const features = [
     {
-      icon: Volume2,
-      title: "Natural-Sounding Voice Tech",
-      description: "Our AI receptionists sound completely human and natural."
+      icon: Clock,
+      title: "Save Time, Gain Efficiency",
+      description: "Let AI handle the repetitive work."
+    },
+    {
+      icon: Target,
+      title: "Results-Driven Approach", 
+      description: "Focused on measurable growth across all channels."
     },
     {
       icon: Users,
-      title: "Social Media Expertise",
-      description: "Strategic content that builds communities and drives engagement."
-    },
-    {
-      icon: Settings,
-      title: "Fully Customizable Solutions",
-      description: "Tailored AI and social strategies for your unique business needs."
-    },
-    {
-      icon: Clock,
-      title: "Save Time, Gain Efficiency",
-      description: "Automated systems handle calls and social media 24/7."
+      title: "Expert Team",
+      description: "Our specialists combine AI expertise with proven marketing strategies to deliver exceptional results."
     },
     {
       icon: TrendingUp,
-      title: "Results-Driven Approach",
-      description: "Focused on measurable growth and ROI across all channels."
-    },
-    {
-      icon: Zap,
-      title: "Brand Loyalty Building",
-      description: "Create lasting relationships through consistent engagement."
+      title: "Scalable Solutions",
+      description: "Whether you're a startup or enterprise, our solutions grow with your business needs."
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Effortless Solutions?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We deliver AI solutions and social media strategies that actually work for your business
+            We combine cutting-edge AI technology with proven marketing strategies to deliver exceptional results for your business.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center mx-auto mb-6 group-hover:shadow-xl transition-all duration-300">
-                <feature.icon className="h-10 w-10 text-blue-600" />
+            <div key={index} className="text-center p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <feature.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
