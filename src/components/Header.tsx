@@ -1,9 +1,25 @@
 
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+  const isContentExamplesPage = location.pathname === '/content-examples';
+
+  const handleNavClick = (sectionId: string) => {
+    if (isContentExamplesPage) {
+      // Navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // Scroll to section on current page
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4">
@@ -16,9 +32,24 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
-            <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            <button 
+              onClick={() => handleNavClick('services')} 
+              className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+            >
+              Services
+            </button>
+            <button 
+              onClick={() => handleNavClick('about')} 
+              className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => handleNavClick('contact')} 
+              className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+            >
+              Contact
+            </button>
             <Link to="/content-examples" className="text-gray-600 hover:text-blue-600 transition-colors">
               Content Examples
             </Link>

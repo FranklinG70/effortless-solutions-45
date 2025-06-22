@@ -24,7 +24,7 @@ const ContentExamples = () => {
       title: "First Indoor Plumbing Hotel",
       content: "The Tremont Hotel in Boston was the first hotel to offer indoor plumbing in 1829. Imagine the luxury! Modern conveniences we take for granted were revolutionary back then.",
       hashtags: "#IndoorPlumbing #BostonHistory #PlumbingInnovation",
-      image: "/lovable-uploads/8ed1a7fa-72c9-4877-bc9c-361ece3f1f35.png"
+      image: "/lovable-uploads/654282c1-d9b6-42b4-ab36-176171bc62d0.png"
     },
     {
       type: "Plumbing Tips",
