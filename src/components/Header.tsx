@@ -1,16 +1,24 @@
 
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isContentExamplesPage = location.pathname === '/content-examples';
 
   const handleNavClick = (sectionId: string) => {
     if (isContentExamplesPage) {
-      // Navigate to home page with hash
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home page and then scroll to section
+      navigate('/', { replace: true });
+      // Use setTimeout to ensure the page has loaded before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     } else {
       // Scroll to section on current page
       const element = document.getElementById(sectionId);
