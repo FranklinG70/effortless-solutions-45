@@ -117,7 +117,7 @@ const ContentExamples = () => {
                     className="w-full h-full"
                     poster="/placeholder.svg"
                   >
-                    <source src="/Franks%20Plumbing%20Ad%20(720).mp4" type="video/mp4" />
+                    <source src="https://github.com/user-attachments/files/18151031/Franks.Plumbing.Ad.720.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
