@@ -111,15 +111,23 @@ const ContentExamples = () => {
                 <CardTitle className="text-2xl">Frank's Plumbing Services Video Ad</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video bg-gray-900 rounded-lg mb-6 overflow-hidden">
-                  <video 
-                    controls 
-                    className="w-full h-full"
-                    poster="/placeholder.svg"
-                  >
-                    <source src="https://github.com/user-attachments/files/18151031/Franks.Plumbing.Ad.720.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                <div className="aspect-video bg-gray-100 rounded-lg mb-6 p-8 flex flex-col items-center justify-center text-center">
+                  <div className="text-gray-600 mb-4">
+                    <svg className="w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Video Advertisement Placeholder</h3>
+                  <p className="text-gray-600 mb-4">
+                    This section would feature your professional video advertisement showcasing Frank's Plumbing services, 
+                    highlighting expertise, reliability, and customer satisfaction.
+                  </p>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <p className="text-sm text-blue-800">
+                      <strong>Video Content Strategy:</strong> Professional testimonials, before/after showcases, 
+                      expert tips, and clear calls-to-action to drive customer engagement and bookings.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
