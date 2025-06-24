@@ -117,15 +117,10 @@ const ContentExamples = () => {
                     controls
                     preload="metadata"
                   >
-                    <source src="/Franks Plumbing Ad (720).mp4" type="video/mp4" />
+                    <source src="./Franks Plumbing Ad (720).mp4" type="video/mp4" />
+                    <source src="/public/Franks Plumbing Ad (720).mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Video Content Strategy:</strong> Professional testimonials, before/after showcases, 
-                    expert tips, and clear calls-to-action to drive customer engagement and bookings.
-                  </p>
                 </div>
               </CardContent>
             </Card>
