@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
@@ -163,7 +164,7 @@ const ContentExamples = () => {
                       preload="metadata"
                       onError={() => setVideoError(true)}
                     >
-                      <source src="/Franks Plumbing Ad (720).mp4" type="video/mp4" />
+                      <source src="https://effsolweb.s3.amazonaws.com/Franks%20Plumbing%20Ad%20(720).mp4" type="video/mp4" />
                       <p>Your browser does not support the video tag.</p>
                     </video>
                   </div>
@@ -171,10 +172,10 @@ const ContentExamples = () => {
                   <div className="aspect-video bg-gray-100 rounded-lg flex flex-col items-center justify-center mb-6 p-8 text-center">
                     <div className="text-gray-600 mb-4">
                       <p className="text-lg font-semibold mb-2">Video Currently Unavailable</p>
-                      <p className="mb-4">The video file may be too large to stream directly. You can download it to view:</p>
+                      <p className="mb-4">The video file may be experiencing loading issues. You can try refreshing or download it to view:</p>
                     </div>
                     <Button asChild variant="outline">
-                      <a href="/Franks Plumbing Ad (720).mp4" download="Franks Plumbing Ad.mp4">
+                      <a href="https://effsolweb.s3.amazonaws.com/Franks%20Plumbing%20Ad%20(720).mp4" download="Franks Plumbing Ad.mp4">
                         <Download className="mr-2 h-4 w-4" />
                         Download Video Ad
                       </a>
