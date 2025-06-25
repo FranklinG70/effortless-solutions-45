@@ -116,9 +116,12 @@ const ContentExamples = () => {
                     className="w-full h-full object-cover" 
                     controls
                     preload="metadata"
+                    playsInline
+                    crossOrigin="anonymous"
                   >
-                    <source src="/Franks Plumbing Ad (720).mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
+                    <source src="/Franks%20Plumbing%20Ad%20(720).mp4" type="video/mp4" />
+                    <source src="./Franks Plumbing Ad (720).mp4" type="video/mp4" />
+                    <p>Your browser does not support the video tag. <a href="/Franks%20Plumbing%20Ad%20(720).mp4" download>Download the video</a> instead.</p>
                   </video>
                 </div>
               </CardContent>
