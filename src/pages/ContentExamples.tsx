@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Header from '../components/Header';
@@ -76,6 +77,48 @@ const ContentExamples = () => {
           </p>
         </div>
 
+        {/* Content Strategy Overview */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Content Strategy Pillars</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Fun Facts & History",
+                description: "Share interesting and surprising facts about plumbing, its history, and its impact on daily life."
+              },
+              {
+                title: "Plumbing Tips & Tricks", 
+                description: "Provide valuable advice on plumbing maintenance, common issues, and DIY solutions."
+              },
+              {
+                title: "Behind the Scenes",
+                description: "Showcase the team, their expertise, and day-to-day operations."
+              },
+              {
+                title: "Customer Spotlights",
+                description: "Highlight positive customer experiences and showcase successful projects."
+              },
+              {
+                title: "Promotions & Services",
+                description: "Directly promote services, special offers, and seasonal maintenance reminders."
+              },
+              {
+                title: "Community Engagement",
+                description: "Interact with the local community, participate in trends, and ask engaging questions."
+              }
+            ].map((pillar, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-lg text-blue-600">{pillar.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{pillar.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
         {/* Social Media Posts Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Social Media Post Examples</h2>
@@ -116,58 +159,13 @@ const ContentExamples = () => {
                     className="w-full h-full object-cover" 
                     controls
                     preload="metadata"
-                    playsInline
-                    crossOrigin="anonymous"
                   >
-                    <source src="/Franks%20Plumbing%20Ad%20(720).mp4" type="video/mp4" />
                     <source src="./Franks Plumbing Ad (720).mp4" type="video/mp4" />
-                    <p>Your browser does not support the video tag. <a href="/Franks%20Plumbing%20Ad%20(720).mp4" download>Download the video</a> instead.</p>
+                    <p>Your browser does not support the video tag. <a href="./Franks Plumbing Ad (720).mp4" download>Download the video</a> instead.</p>
                   </video>
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* Content Strategy Overview */}
-        <section>
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Content Strategy Pillars</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Fun Facts & History",
-                description: "Share interesting and surprising facts about plumbing, its history, and its impact on daily life."
-              },
-              {
-                title: "Plumbing Tips & Tricks", 
-                description: "Provide valuable advice on plumbing maintenance, common issues, and DIY solutions."
-              },
-              {
-                title: "Behind the Scenes",
-                description: "Showcase the team, their expertise, and day-to-day operations."
-              },
-              {
-                title: "Customer Spotlights",
-                description: "Highlight positive customer experiences and showcase successful projects."
-              },
-              {
-                title: "Promotions & Services",
-                description: "Directly promote services, special offers, and seasonal maintenance reminders."
-              },
-              {
-                title: "Community Engagement",
-                description: "Interact with the local community, participate in trends, and ask engaging questions."
-              }
-            ].map((pillar, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-lg text-blue-600">{pillar.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">{pillar.description}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </section>
       </div>
